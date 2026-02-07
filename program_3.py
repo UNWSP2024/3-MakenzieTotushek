@@ -15,7 +15,15 @@ def weight_conversion(weight):
     ######################
     # WRITE YOUR CODE HERE
     ######################
-    
+    if weight <= 2:
+        shippingCost = float(1.50)
+    elif weight <= 6:
+        shippingCost = float(3.00)
+    elif weight <= 10:
+        shippingCost = float(4.00)
+    else:
+        shippingCost = float(4.75)
+
     return shippingCost
 
 #### This piece of the code has been done for you,
